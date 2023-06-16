@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mycelium Mechanics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index(devyhomepage).html"><img src="ImagesHomepage/kisspng-maastricht-university-university-college-maastrich-universiteit-maastricht-logo-svg-vector-amp-png-5b89c4dd0b8b.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index(devyhomepage).html">HOME</a></li>
+                    <li><a href="index.html">DATABASE</a></li>
+                    <li><a href="index.html">SUBMISSIONS</a></li>
+                    <li><a href="about.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<div class="text-box">
+    <h1> Mycelium Mechanics</h1>
+    <p>Mechanical protpery database of different fungi species and their composites.</p>
+    <a href="index.html" class="hero-btn">Browse Database</a>
+</div>
+</section>
+<!----- ABOUT ------>
+<section class="about">
+    <h1>Our Purpose</h1>
+    <p>HOLDER PUT INFO ABOUT PROJECT PURPOSE HERE</p>
+    <div class="row">
+        <div class="about-col">
+            <h3>The Team</h3>
+            <p>Information about team and coordinator. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra, erat in tristique interdum, est mi commodo velit, sit amet euismod felis turpis nec quam. Sed cursus quam auctor, mollis odio id, vehicula mi.</p>
+        </div>  
+        <div class="about-col">
+            <h3>The Labs</h3>
+            <p>Information about Labs used. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra, erat in tristique interdum, est mi commodo velit, sit amet euismod felis turpis nec quam. Sed cursus quam auctor, mollis odio id, vehicula mi.</p>
+        </div> 
+        <div class="about-col">
+            <h3>Signifiance</h3>
+            <p>Signifiance and Importance of project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra, erat in tristique interdum, est mi commodo velit, sit amet euismod felis turpis nec quam. Sed cursus quam auctor, mollis odio id, vehicula mi.</p>
+        </div> 
+    </div>
+</section> 
+    
+<!-------Footer------>
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Infromation summarizing the Our purpose section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nullam pharetra, erat in tristique interdum, est mi commodo velit, sit amet euismod felis turpis nec quam.<br> Sed cursus quam auctor, mollis odio id, vehicula mi.</p>
+</section>  
+     
+    
+<!-----Javascript for Toggle Menu------>
+<script>
+    var navLinks= document.getElementById("navLink");
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    } 
+     
+

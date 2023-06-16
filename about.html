@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mycelium Mechanics</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="subheader">
+      <nav>
+        <a href="index(devyhomepage).html"
+          ><img
+            src="ImagesHomepage/kisspng-maastricht-university-university-college-maastrich-universiteit-maastricht-logo-svg-vector-amp-png-5b89c4dd0b8b.png"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index(devyhomepage).html">HOME</a></li>
+            <li><a href="index.html">DATABASE</a></li>
+            <li><a href="index.html">SUBMISSIONS</a></li>
+            <li><a href="about.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+    <!-------Contact Us------>
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>Paul-Henri Spaaklaan 16</h5>
+              <p>229 EN, Maastricht, The Netherlands</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+31 43 388 3455</h5>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <span>
+              <h5>d.ravi@student.maastrichtuniversity.nl</h5>
+              <p>Email us your query</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="#">
+            <input type="text" placeholder="Enter Your Name" required />
+            <input
+              type="email"
+              placeholder="Enter Your Email Address"
+              required
+            />
+            <input type="text" placeholder="Enter Your Subject" required />
+            <textarea rows="8" placeholder="Message" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-------Footer------>
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Infromation summarizing the Our purpose section. Lorem ipsum dolor sit
+        amet, consectetur adipiscing elit.<br />
+        Nullam pharetra, erat in tristique interdum, est mi commodo velit, sit
+        amet euismod felis turpis nec quam.<br />
+        Sed cursus quam auctor, mollis odio id, vehicula mi.
+      </p>
+    </section>
+
+    <!-----Javascript for Toggle Menu------>
+    <script>
+      var navLinks = document.getElementById("navLink");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
