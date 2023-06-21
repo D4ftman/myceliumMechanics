@@ -79,7 +79,28 @@
                 <tr>
                   <td>Trametes versicolor</td>
                   <td>value</td>
-                  <td>value</td>
+                  <td>
+                    <head>
+                      <script>
+                        function openImage() {
+                          var image = document.getElementById("myImage");
+                          if (image.style.display === "none") {
+                            image.style.display = "block";
+                          } else {
+                            image.style.display = "none";
+                          }
+                        }
+                      </script>
+                    </head>
+                    <body>
+                      <button onclick="openImage()">Open/Close Image</button>
+                      <img
+                        id="myImage"
+                        src="images/billyboi.jpg"
+                        style="display: none"
+                      />
+                    </body>
+                  </td>
                   <td>value</td>
                   <td>value</td>
                   <td>value</td>
