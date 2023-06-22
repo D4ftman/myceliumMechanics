@@ -12,6 +12,14 @@
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for the button */
+        .btn-custom {
+            background-color: #004085 !important; /* Dark blue */
+            color: #ffffff !important; /* White */
+        }
+    </style>
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
@@ -56,161 +64,197 @@
               mechanical properites of mycelium cells. Here you can view our
               results, share your own and access our contact details.
             </p>
+            <div class="table-responsive">
             <table id="speciesTable">
               <thead>
-                <tr>
-                  <th>Species</th>
-                  <th>Elastic Modulus</th>
-                  <th>Stress Strain Graph</th>
-                  <th>Toughness</th>
-                  <th>Resilience</th>
-                  <th>Fracture Point</th>
-                  <th>Hyphal System Picture</th>
-                  <th>Diameter</th>
-                  <th>Average Hyphae Length</th>
-                  <th>Septae Distance</th>
-                  <th>Branching</th>
-                  <th>Branching 2</th>
-                  <th>Image</th>
-                  <!-- New column for the button -->
-                </tr>
+                  <tr>
+                      <th>Species</th>
+                      <th>Elastic Modulus</th>
+                      <th>Stress Strain Graph</th>
+                      <th>Toughness</th>
+                      <th>Resilience</th>
+                      <th>Fracture Point</th>
+                      <th>Hyphal System Picture</th>
+                      <th>Diameter</th>
+                      <th>Average Hyphae Length</th>
+                      <th>Septae Distance</th>
+                      <th>Branching</th>
+                      <th>Branching 2</th>
+                      <th>Image</th>
+                  </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Trametes versicolor</td>
-                  <td>value</td>
-                  <td>
-                    <head>
-                      <script>
-                        function openImage() {
-                          var image = document.getElementById("myImage");
-                          if (image.style.display === "none") {
-                            image.style.display = "block";
-                          } else {
-                            image.style.display = "none";
-                          }
-                        }
-                      </script>
-                    </head>
-                    <body>
-                      <button onclick="openImage()">Open/Close Image</button>
-                      <img
-                        id="myImage"
-                        src="images/billyboi.jpg"
-                        style="display: none"
-                      />
-                    </body>
-                  </td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td></td>
-                  <!-- Button for the image -->
-                </tr>
-                <tr>
-                  <td>Pleurotus ostreatus</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td></td>
-                  <!-- Button for the image -->
-                </tr>
-                <tr>
-                  <td>Fomes fomentarius</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                </tr>
-                <!-- Add rows for other species here -->
-                <tr>
-                  <td>Ganoderma</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td></td>
-                  <!-- Button for the image -->
-                </tr>
-                <tr>
-                  <td>Fomitopsis</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td></td>
-                  <!-- Button for the image -->
-                </tr>
-                <tr>
-                  <td>Hypholoma</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td></td>
-                  <!-- Button for the image -->
-                </tr>
-                <tr>
-                  <td>Exidia</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td>value</td>
-                  <td></td>
-                  <!-- Button for the image -->
-                </tr>
+                  <tr>
+                      <td>Trametes versicolor</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>
+                          <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal1" data-image-url="images/pic01.jpg">
+                              Open Image
+                          </button>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Pleurotus ostreatus</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>
+                          <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal2" data-image-url="image-url-2">
+                              Open Image
+                          </button>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Fomes fomentarius</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>
+                          <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal3" data-image-url="image-url-3">
+                              Open Image
+                          </button>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Ganoderma</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>
+                          <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal4" data-image-url="image-url-4">
+                              Open Image
+                          </button>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Fomitopsis</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>
+                          <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal5" data-image-url="image-url-5">
+                              Open Image
+                          </button>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Hypholoma</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>
+                          <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal6" data-image-url="image-url-6">
+                              Open Image
+                          </button>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Exidia</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>value</td>
+                      <td>
+                          <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal7" data-image-url="image-url-7">
+                              Open Image
+                          </button>
+                      </td>
+                  </tr>
               </tbody>
-            </table>
+          </table>
+          </div>
           </header>
+
+          <div class="modal fade" id="imageModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="" alt="Image description" class="img-fluid">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <!-- Add more modals as needed (so 1 modal for each button), each with a unique ID!!!!!! Use the the one above as an example. --> 
+
+
+
+
+
+
+          <!--Don't touch the script tags-->
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+          <script>
+            // When a modal is about to be shown, update the image. Don't touch this too!
+            $('.modal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget) // Button that triggered the modal
+                var imageUrl = button.data('image-url') // Extract info from data-* attributes
+                var modal = $(this)
+                modal.find('.modal-body img').attr('src', imageUrl)
+            })
+            </script>
+
           <section class="tiles">
             <article class="style1">
               <span class="image">
