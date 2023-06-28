@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>Mycelium Mechanic</title>
+    <title>Mycelium Mechanics</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -18,6 +18,8 @@
         .btn-custom {
             background-color: #004085 !important; /* Dark blue */
             color: #ffffff !important; /* White */
+            letter-spacing: -1.25px; /* Decrease the letter spacing */
+            font-family: 'Verdana', sans-serif; /* Add font */
         }
     </style>
   </head>
@@ -58,15 +60,35 @@
       <div id="main">
         <div class="inner">
           <header>
-            <h1>Mycelium Mechanics Data Webpage</h1>
+            <h1>Data of Mycelium Mechanics</h1>
             <p></p>
             <br></header>
             <p>
-             <b>- made by MSP students to access, upload and share data on
-              mechanical properites of mycelium cells. Here you can view our
-              results, share your own and access our contact details.</b>
+             <b>This webpage was created by students of the Maastricht Science Programme to access, upload and share data on
+              mechanical properites of mycelium cells.</b>
             </p>
+          </br>
             <br>
+            <p>
+            <b>View the results, conveniently access our contact details and submit your own findings.</b>
+              </p>
+            </br>
+            <br>
+            <p></p>
+          </br>
+
+         <style>
+            table#speciesTable td {
+            .custom-font
+              font-family: 'Arial', sans-serif;
+              font-size: 15px; 
+                        
+              /* Add any other font styles as needed */
+            }
+          </style>
+
+    
+
             <div class="table-responsive">
             <table id="speciesTable">
               <thead>
@@ -88,69 +110,69 @@
               </thead>
               <tbody>
                   <tr>
-                      <td>Trametes versicolor</td>
-                      <td>247.37 MPa SD[7.99] </td>
-                      <td><button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal8" data-image-url="images/pic02.jpg">
-                        Open Image
+                      <td class="custom-font">Trametes versicolor</td>
+                      <td class="custom-font">247.37 MPa SD[7.99] </td>
+                      <td class="custom-font"><button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal8" data-image-url="images/pic02.jpg">
+                        Image
                     </button></td>
-                      <td>0.347 MPa Sd[0.338]</td>
-                      <td>0.0169 MPa SD[0.0315]</td>
-                      <td>6.25 MPa SD[1.77]</td>
-                      <td>
+                      <td class="custom-font">0.347 MPa Sd[0.338]</td>
+                      <td class="custom-font">0.0169 MPa SD[0.0315]</td>
+                      <td class="custom-font">6.25 MPa SD[1.77]</td>
+                      <td class="custom-font">
                         <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal15" data-image-url="images/pic02.jpg">
-                          Open Image
+                          Image
                       </button>
                       </td>
-                      <td>value</td>
-                      <td>value</td>
-                      <td>value</td>
-                      <td>value</td>
-                      <td>value</td>
-                      <td>
+                      <td class="custom-font">value</td>
+                      <td class="custom-font">value</td>
+                      <td class="custom-font">value</td>
+                      <td class="custom-font">value</td>
+                      <td class="custom-font">value</td>
+                      <td class="custom-font">
                           <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal1" data-image-url="images/pic01.jpg">
-                              Open Image
+                              Image
                           </button>
                       </td>
                   </tr>
                   <tr>
-                      <td>Pleurotus ostreatus</td>
-                      <td>514.29 Mpa SD[-]</td>
-                      <td>
+                      <td class="custom-font">Pleurotus ostreatus</td>
+                      <td class="custom-font">514.29 MPa SD[-]</td>
+                      <td class="custom-font">
                           <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal9" data-image-url="images/pic02.jpg">
-                              Open Image
+                              Image
                           </button>
                       </td>
-                      <td>0.0129 Mpa SD[-]</td>
-                      <td>9.47 Mpa SD [-] </td>
-                      <td>value</td>
-                      <td>
+                      <td class="custom-font">0.0129 MPa SD[-]</td>
+                      <td class="custom-font">9.47 MPa SD [-] </td>
+                      <td class="custom-font">value</td>
+                      <td class="custom-font">
                         <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal16" data-image-url="images/pic02.jpg">
-                          Open Image
+                          Image
                       </button>
                       </td>
-                      <td>value</td>
-                      <td>value</td>
-                      <td>value</td>
-                      <td>value</td>
-                      <td>value</td>
+                      <td class="custom-font">value</td>
+                      <td class="custom-font">value</td>
+                      <td class="custom-font">value</td>
+                      <td class="custom-font">value</td>
+                      <td class="custom-font">value</td>
                       <td>
                           <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal2" data-image-url="images/pic02.jpg">
-                              Open Image
+                               Image
                           </button>
                       </td>
                   </tr>
                   <tr>
-                      <td>Fomes fomentarius</td>
-                      <td>value</td>
-                      <td><button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal10" data-image-url="images/pic02.jpg">
-                        Open Image
+                      <td class="custom-font">Fomes fomentarius</td>
+                      <td class="custom-font">value</td>
+                      <td class="custom-font"><button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal10" data-image-url="images/pic02.jpg">
+                         Image
                     </button></td>
                       <td>value</td>
                       <td>value</td>
                       <td>value</td>
                       <td>
                         <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal17" data-image-url="images/pic02.jpg">
-                          Open Image
+                           Image
                       </button>
                       </td>
                       <td>value</td>
@@ -160,22 +182,22 @@
                       <td>value</td>
                       <td>
                           <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal3" data-image-url="image-url-3">
-                              Open Image
+                               Image
                           </button>
                       </td>
                   </tr>
                   <tr>
                       <td>Ganoderma</td>
-                      <td>513.25 Mpa SD[153.5] </td>
+                      <td>513.25 MPa SD[153.5] </td>
                       <td><button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal11" data-image-url="images/pic02.jpg">
-                        Open Image
+                         Image
                     </button></td>
-                      <td>0.01193 Mpa SD [0.01077]</td>
+                      <td>0.01193 MPa SD [0.01077]</td>
                       <td>-</td>
-                      <td>8.305 Mpa SD[5.62]</td>
+                      <td>8.305 MPa SD[5.62]</td>
                       <td>
                         <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal18" data-image-url="images/pic02.jpg">
-                          Open Image
+                           Image
                       </button>
                       </td>
                       <td>value</td>
@@ -185,7 +207,7 @@
                       <td>value</td>
                       <td>
                           <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal4" data-image-url="image-url-4">
-                              Open Image
+                               Image
                           </button>
                       </td>
                   </tr>
@@ -193,14 +215,14 @@
                       <td>Fomitopsis</td>
                       <td>value</td>
                       <td><button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal12" data-image-url="images/pic02.jpg">
-                        Open Image
+                         Image
                     </button></td>
                       <td>value</td>
                       <td>value</td>
                       <td>value</td>
                       <td>
                         <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal19" data-image-url="images/pic02.jpg">
-                          Open Image
+                           Image
                       </button>
                       </td>
                       <td>value</td>
@@ -210,7 +232,7 @@
                       <td>value</td>
                       <td>
                           <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal5" data-image-url="image-url-5">
-                              Open Image
+                               Image
                           </button>
                       </td>
                   </tr>
@@ -218,14 +240,14 @@
                       <td>Hypholoma</td>
                       <td>value</td>
                       <td><button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal13" data-image-url="images/pic02.jpg">
-                        Open Image
+                         Image
                     </button></td>
                       <td>value</td>
                       <td>value</td>
                       <td>value</td>
                       <td>
                         <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal20" data-image-url="images/pic02.jpg">
-                          Open Image
+                           Image
                       </button>
                       </td>
                       <td>value</td>
@@ -235,7 +257,7 @@
                       <td>value</td>
                       <td>
                           <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal6" data-image-url="image-url-6">
-                              Open Image
+                               Image
                           </button>
                       </td>
                   </tr>
@@ -243,14 +265,14 @@
                       <td>Exidia</td>
                       <td>208.43 Pa SD[21.68]</td>
                       <td><button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal14" data-image-url="images/pic02.jpg">
-                        Open Image
+                         Image
                     </button></td>
                       <td>value</td>
                       <td>value</td>
                       <td>value</td>
                       <td>
                         <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal21" data-image-url="images/pic02.jpg">
-                          Open Image
+                           Image
                       </button>
                       </td>
                       <td>value</td>
@@ -260,7 +282,7 @@
                       <td>value</td>
                       <td>
                           <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal7" data-image-url="image-url-7">
-                              Open Image
+                               Image
                           </button>
                       </td>
                   </tr>
@@ -269,15 +291,15 @@
                       <td>277.3 MPa SD[108.2]</td>
                       <td>
                           <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal9" data-image-url="images/pic02.jpg">
-                              Open Image
+                               Image
                           </button>
                       </td>
-                      <td>16.64 Mpa SD[7.68]</td>
-                      <td>0.0507 Mpa SD[0.0257</td>
-                      <td>15.61 Mpa SD[2.37]</td>
+                      <td>16.64 MPa SD[7.68]</td>
+                      <td>0.0507 MPa SD[0.0257</td>
+                      <td>15.61 MPa SD[2.37]</td>
                       <td>
                         <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal16" data-image-url="images/pic02.jpg">
-                          Open Image
+                           Image
                       </button>
                       </td>
                       <td>value</td>
@@ -287,7 +309,7 @@
                       <td>value</td>
                       <td>
                           <button type="button" class="btn btn-custom" data-toggle="modal" data-target="#imageModal2" data-image-url="images/pic02.jpg">
-                              Open Image
+                               Image
                           </button>
                       </td>
                   </tr>
